@@ -21,10 +21,12 @@ int main()
             cout<<" ";
 
         }for(int z=1;z<2*i;z++){
-            if(z/2==0)
-            {
-               cout<<" ";
-            }
+            if(z%2==0)
+
+
+              cout<<" ";
+               else cout<<"*";
+
 
         }cout<<endl;
     }
