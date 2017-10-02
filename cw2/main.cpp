@@ -13,9 +13,14 @@ int main()
     cout << "Podaj liczbe wierszy" << endl;
     cin>>w;
 
-    for(int i=1;i<w;i++)
+    for(int i=1;i<=w;i++)
     {gotoxy (30,i);
         cout<<"*"<<endl;
+        for(int j=1;j<i;j++){gotoxy (j+30,i);
+            cout<<"*"<<endl;
+        }for(int j=1;j<i;j++){gotoxy (30-j,i);
+            cout<<"*"<<endl;
+        }
     }
 
     return 0;
