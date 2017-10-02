@@ -14,13 +14,19 @@ int main()
     cin>>w;
 
     for(int i=1;i<=w;i++)
-    {gotoxy (30,i);
-        cout<<"*"<<endl;
-        for(int j=1;j<i;j++){gotoxy (j+30,i);
-            cout<<"*"<<endl;
-        }for(int j=1;j<i;j++){gotoxy (30-j,i);
-            cout<<"*"<<endl;
-        }
+    {
+
+        for(int j=1;j<30-i;j++){
+
+            cout<<" ";
+
+        }for(int z=1;z<2*i;z++){
+            if(z/2==0)
+            {
+               cout<<" ";
+            }
+
+        }cout<<endl;
     }
 
     return 0;
